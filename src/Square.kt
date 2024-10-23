@@ -1,7 +1,7 @@
 import kotlin.math.abs
 
 // TODO: дополнить определение класса размерами и позицией
-class Square(var x: Int, var y: Int, var size: Int) : Figure(1), Transforming, Movable {
+class Square(var x: Int, var y: Int, var size: Int) : Figure(1) {
 
     override fun area(): Float {
         return (size*size).toFloat()

@@ -1,7 +1,7 @@
 // сочетание определения класса и конструктора одновременно объявляет переменные и задаёт их значения
 import kotlin.math.abs
 
-class Rect(var x: Int, var y: Int, var width: Int, var height: Int) : Movable, Transforming, Figure(0) {
+class Rect(var x: Int, var y: Int, var width: Int, var height: Int) : Figure(0) {
 
     // нужно явно указывать, что вы переопределяете метод
     override fun move(dx: Int, dy: Int) {

@@ -4,7 +4,7 @@ import kotlin.math.PI
 import kotlin.math.abs
 import kotlin.math.pow
 
-class Circle(var x: Int, var y: Int, var rad: Int) : Figure(2), Transforming, Movable {
+class Circle(var x: Int, var y: Int, var rad: Int) : Figure(2) {
     override fun area(): Float {
         return (PI * rad.toDouble().pow(2)).toFloat()
     }
@@ -62,6 +62,9 @@ class Circle(var x: Int, var y: Int, var rad: Int) : Figure(2), Transforming, Mo
                 }
             }
         }
+    }
+    override fun toString(): String {
+        return "(${x}, ${y}), size $rad"
     }
 
 }
